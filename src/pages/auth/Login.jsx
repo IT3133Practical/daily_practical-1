@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const Login = () => {
     return (
         <>
@@ -7,7 +9,8 @@ const Login = () => {
                     <div>Username</div>
                     <div>
                         <input type="text" placeholder="Enter your Username" />
-                    </div>                </div>
+                    </div>
+                </div>
                 <div>
                     <div>Password</div>
                     <div>
@@ -18,6 +21,9 @@ const Login = () => {
                     <button type="button">Login</button>
                 </div>
             </form>
+            <div>
+                Do you haven't a account?<Link to="/signup">Create One</Link>
+            </div>
         </>
     )
 }
